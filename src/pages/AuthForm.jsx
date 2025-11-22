@@ -1,12 +1,9 @@
-// src/components/AuthForm.jsx
-
 import React, { useState } from 'react';
-
 
 const AuthForm = () => {
   const [isLogin, setIsLogin] = useState(true);
 
-  // --- Common Tailwind Classes ---
+
   const buttonActiveClasses = 'w-1/2 py-2 px-4 rounded-md text-sm font-medium text-gray-800 bg-white shadow-sm ring-1 ring-gray-200';
   const buttonInactiveClasses = 'w-1/2 py-2 px-4 rounded-md text-sm font-medium text-gray-500 bg-gray-50 hover:bg-gray-100';
   const inputClasses = 'appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm';
@@ -154,7 +151,7 @@ const AuthForm = () => {
 
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen  bg-gradient-to-br from-slate-100 via-blue-100 to-slate-200  flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full bg-white p-8 rounded-lg shadow-xl">
         
         <Header />
