@@ -1,7 +1,7 @@
 import React from 'react';
 import { User, Plus, FileText } from 'lucide-react';
 
-// Main Application Component
+
 const App = () => {
   // Mock User Data
   const userName = 'nandini sharma';
