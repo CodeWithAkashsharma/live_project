@@ -2,8 +2,8 @@
 import React from "react";
 
 const navItems = [
-  { label: "Dashboard", active: true, icon: "dashboard" },
-  { label: "Profile", active: false, icon: "profile" },
+  { label: "Dashboard", active: false, icon: "dashboard" },
+  { label: "Profile", active: true, icon: "profile" },
   { label: "Logout", active: false, icon: "logout" },
 ];
 
