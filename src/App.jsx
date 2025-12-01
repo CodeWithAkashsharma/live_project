@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import AuthForm from './pages/AuthForm'
 import UserDash from './pages/UserDash'
@@ -16,9 +16,9 @@ function App() {
   return (
       <BrowserRouter>
       <Routes>
-        <Route path="/SuperAdmin/Dashboard" element={<SuperAdmin/>} />
-
+        <Route path="/" element={<Navigate to="/Home"/>}/>
         <Route path="/Home" element={<LandingPage />} />
+        <Route path="/SuperAdmin/Dashboard" element={<SuperAdmin/>} />
         <Route path="/SuperAdmin/Dashboard" element={<SuperAdmin />} />
         <Route path="/User/ComplaintDetail/:id" element={<U_ComplaintDetail />} />
         <Route path="/Admin/ComplainDetail/:id" element={<A_ComplaintDetail />} />
